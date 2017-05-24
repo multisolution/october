@@ -31,8 +31,7 @@ Then you should exec install scripts yourself:
 
 ```shell
 docker-compose exec web php composer.phar install
-docker-compose exec web php artisan key:generate
 docker-compose exec web php artisan october:up
-docker-compose exec web php artisan october:fresh
+docker-compose exec web php artisan key:generate
 ```
 *If you are not using Docker, just remove the `docker-compose exec web` part.*
