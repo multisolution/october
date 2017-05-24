@@ -8,6 +8,7 @@ This fork is a Multi Solution boilerplate which includes:
 * Disabled core updates
 * Locked dependencies
 * Enabled DotEnv configuration
+* Builder plugin
 * **Docker!**
     * PHP 7.1
     * MySQL 5.7
@@ -31,6 +32,8 @@ Then you should exec install scripts yourself:
 
 ```shell
 docker-compose exec web php composer.phar install
+docker-compose exec web php artisan key:generate
 docker-compose exec web php artisan october:up
+docker-compose exec web php artisan october:fresh
 ```
 *If you are not using Docker, just remove the `docker-compose exec web` part.*

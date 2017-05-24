@@ -1,0 +1,29 @@
+version: '3'
+services:
+  web:
+    container_name: multisolution_october_web
+    build: .
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "${DOCKER_WEB_PORT}:80"
+    links:
+      - db
+      - redis
+
+  db:
+    container_name: multisolution_october_db
+    image: mysql:5.7
+    volumes:
+      - ./storage/db:/var/lib/mysql
+    ports:
+      - "${DOCKER_DB_PORT}:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+
+  redis:
+    container_name: multisolution_october_redis
+    image: redis:3.2
