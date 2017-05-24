@@ -9,6 +9,10 @@ This fork is a Multi Solution boilerplate which includes:
 * Locked dependencies
 * Enabled DotEnv configuration
 * Docker!
+    * PHP 7.1
+    * MySQL 5.7
+    * Redis 3.2
+    * Composer
 
 ### Using this fork
 
