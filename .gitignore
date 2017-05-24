@@ -15,6 +15,7 @@ php-errors.log
 sftp-config.json
 selenium.php
 .htaccess
+phpunit.xml
 
 # for netbeans
 nbproject
