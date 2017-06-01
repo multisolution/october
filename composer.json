@@ -34,18 +34,18 @@
     },
     "require": {
         "php": ">=5.5.9",
-        "october/rain": "^1.0",
-        "october/system": "^1.0",
-        "october/backend": "^1.0",
-        "october/cms": "^1.0",
-        "laravel/framework": "^5.1",
+        "october/rain": "~1.0",
+        "october/system": "~1.0",
+        "october/backend": "~1.0",
+        "october/cms": "~1.0",
+        "laravel/framework": "~5.1",
         "wikimedia/composer-merge-plugin": "dev-master",
-        "predis/predis": "^1.1"
+        "predis/predis": "~1.1"
     },
     "require-dev": {
-        "fzaninotto/faker": "^1.4",
-        "phpunit/phpunit": "^4.0",
-        "phpunit/phpunit-selenium": "^1.2"
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~4.0",
+        "phpunit/phpunit-selenium": "~1.2"
     },
     "autoload-dev": {
         "classmap": [
